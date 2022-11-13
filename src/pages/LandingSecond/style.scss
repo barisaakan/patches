@@ -1,0 +1,247 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.secondClickImage{
+    background-color: #0A0A0D;
+    height: 100vh;
+}
+
+.secondClickImage img{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.changeButtonLight{
+    position: absolute; 
+    left: 49.49%; 
+    top: 32%; 
+    width: 6.96%; 
+    height: 10.9%; 
+    z-index: 2;
+}
+
+.changeBg img{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.parallax{
+    background: -o-linear-gradient(top, rgba(244,231,212,1) 0%, rgba(86,81,76,1) 60%, rgba(4,4,6,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(244,231,212,1)), color-stop(60%, rgba(86,81,76,1)), to(rgba(4,4,6,1)));
+    background: linear-gradient(180deg, rgba(244,231,212,1) 0%, rgba(86,81,76,1) 60%, rgba(4,4,6,1) 100%);
+    position: relative;
+    overflow: hidden;
+    height: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.parallax span{
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    margin-left: 90px;
+    font-size: 90px;
+    letter-spacing: 20px;
+    font-family: newFontBold;
+    color: #B36803;
+}
+
+.parallaxImg{
+    background-image: url('../../../public/diveLow.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 900px 2160px;
+    position: absolute;
+    inset: -2000px 0px;
+    will-change: transform;
+    -webkit-transform: translateY(4600px) scale(0.5);
+        -ms-transform: translateY(4600px) scale(0.5);
+            transform: translateY(4600px) scale(0.5);
+}
+
+.puzzleSection{
+    background-color: #F4E7D4;
+    height: 100vh;
+    width: 100vw;
+}
+
+.puzzleContainer{
+    overflow:hidden;
+    height:450px; 
+    position:relative;
+}
+
+.puzzleBanner{
+    position:absolute; 
+    overflow:hidden; 
+    white-space: nowrap;
+    -webkit-animation: puzzleMove 100s linear 1s infinite;
+            animation: puzzleMove 100s linear 1s infinite;
+}
+
+.puzzleBanner img{
+    height: 600px;
+    margin-left: -50px;
+}
+
+.puzzleTexts{
+    text-align: center;
+    margin-top: 20px
+}
+
+.puzzleTexts p:first-child{
+    font-family: newFont;
+    color: #904100;
+    font-size: 4vmin;
+}
+
+.puzzleTexts p:nth-child(2){
+    font-family: newFontBold;
+    color: #2A2B2A;
+    font-size: 6vmin;
+    letter-spacing: 2px;
+}
+
+.puzzleTexts p:last-child{
+    font-family: newFont;
+    color: #904100;
+    font-size: 3vmin;
+}
+
+.patchrix{
+    background-color: #040406;
+}
+
+.patchrixImg{
+    background-image: url(../../../public/patchrix_low.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px){
+    .parallax span{
+        margin-left: 20px;
+        font-size: 70px;
+    }
+    .parallaxImg{
+        background-size: 600px 1440px;
+        -webkit-transform: translateY(4600px) scale(0.5);
+            -ms-transform: translateY(4600px) scale(0.5);
+                transform: translateY(4600px) scale(0.5);
+    }
+    .secondClickImage img{
+        -o-object-fit: contain;
+           object-fit: contain;
+    }
+    .changeButtonLight{
+        top: 38%; 
+        height: 8.9%; 
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .parallaxImg{
+        background-size: 600px 1440px;
+        -webkit-transform: translateY(4600px) scale(0.5);
+            -ms-transform: translateY(4600px) scale(0.5);
+                transform: translateY(4600px) scale(0.5);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .parallaxImg{
+        background-size: 350px 840px;
+        -webkit-transform: translateY(2800px) scale(0.5);
+            -ms-transform: translateY(2800px) scale(0.5);
+                transform: translateY(2800px) scale(0.5);
+    }
+    .parallax span{
+        margin-left: 15px;
+        font-size: 40px;
+    }
+    .puzzleBanner img{
+        height: 500px;
+        margin-left: -50px;
+    }
+    .puzzleBanner{
+        top: 60px;
+    }
+    .puzzleTexts p:first-child{
+        font-size: 7vmin;
+    }
+    .puzzleTexts p:nth-child(2){
+        font-size: 9vmin;
+    }
+    .puzzleTexts p:last-child{
+        font-size: 5vmin;
+    }
+    .patchrixImg{
+        background-image: url(../../../public/patchrixDikey.jpg);
+    }
+    .patchrix{
+        background-color: #0B0A0F;
+    }
+    .parallax{
+        background: -o-linear-gradient(top, rgba(244,231,212,1) 0%, rgba(86,81,76,1) 60%, #0B0A0F 100%);
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(244,231,212,1)), color-stop(60%, rgba(86,81,76,1)), to(#0B0A0F));
+        background: linear-gradient(180deg, rgba(244,231,212,1) 0%, rgba(86,81,76,1) 60%, #0B0A0F 100%);
+    }
+    .changeButtonLight{
+        top: 44%; 
+        height: 6.9%; 
+        left: 47.49%;
+        width: 12.96%;
+    }
+}
+
+@-webkit-keyframes puzzleMove {
+    0% {
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+    }
+}
+
+@keyframes puzzleMove {
+    0% {
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+    }
+}
+
+@font-face {
+    font-family: newFontBold;
+    src: url(../../../public/avenirNextCondensedBold.ttf);
+}
+
+@font-face {
+    font-family: newFont;
+    src: url(../../../public/avenirNextCondensed.ttf);
+}

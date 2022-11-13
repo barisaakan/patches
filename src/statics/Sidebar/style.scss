@@ -1,0 +1,91 @@
+.sidebar{
+    position: fixed;
+    z-index: 1;
+    background-color: #252525;
+    height: 100vh;
+    width: 33vw;
+    right: 0px;
+    transition: all 700ms cubic-bezier(.4,0,.2,1);
+}
+
+.closed{
+    right: -33vw;
+}
+
+.closeButton{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.closeButton svg{
+    transition: 300ms cubic-bezier(.4,0,.2,1);
+}
+
+.closeButton svg:hover{
+   transform: rotate(90deg);
+}
+
+.listGroup{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.list{
+    width: 100%;
+}
+
+.list b{
+    font-family: newFontBold;
+    color: #F4E7D4;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.list p{
+    font-family: newFont;
+    color: #B36803;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    transition: 300ms cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+}
+
+.list p:hover{
+    letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 1000px){
+    .sidebar{
+        width: 50vw;
+    }
+
+    .closed{
+        right: -50vw;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .sidebar{
+        width: 100vw;
+    }
+
+    .closed{
+        right: -100vw;
+    }
+    
+}
+
+@font-face {
+    font-family: newFontBold;
+    src: url(../../../public/avenirNextCondensedBold.ttf);
+}
+
+@font-face {
+    font-family: newFont;
+    src: url(../../../public/avenirNextCondensed.ttf);
+}

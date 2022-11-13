@@ -1,0 +1,80 @@
+header{
+    background-color: transparent;
+    height: 120px;
+    width: calc(100vw - 40px);
+    position: absolute;
+    top: 0px;
+    display:flex;
+    justify-content:space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.headerLeft{
+    height: 100%;
+}
+
+.headerLeft img{
+    height: 100%;
+}
+
+.headerRight{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headerRight img:first-child{
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.headerRight img:first-child:hover{
+    animation: shake 0.5s infinite;
+}
+
+.headerRight img{
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.headerRight img:nth-child(2):hover{
+    animation: shake 0.5s infinite;
+}
+
+
+.headerRight img:last-child{
+    height: 60px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .headerLeft img{
+        height: 100px;
+        margin-top: 10px;
+    }
+    .headerRight img:first-child{
+        height: 20px;
+    }
+
+    .headerRight img{
+        height: 20px;
+        margin-right: 20px;
+    }
+
+    .headerRight img:last-child{
+        height: 40px;
+        margin-right: 0px;
+    }
+}
+
+@keyframes shake {
+    0%   {transform: rotate(0deg)}
+    25%   {transform: rotate(10deg);}
+    50%   {transform: rotate(0deg);}
+    75%   {transform: rotate(-10deg);}
+    100%   {transform: rotate(0deg);}
+  }
